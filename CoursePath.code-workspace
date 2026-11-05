@@ -1,0 +1,13 @@
+{
+  "folders": [
+    { "name": "CoursePath", "path": "." }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "portal/vendor": true,
+      "practicals/C5/node_modules": true,
+      "tmp": true
+    }
+  }
+}

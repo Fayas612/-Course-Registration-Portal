@@ -5,11 +5,11 @@ import hashlib
 
 root = Path(__file__).resolve().parent
 out = root / 'output' / 'FullStack_Assessment_Package.zip'
-files = [root / 'README.md', root / '.gitignore', root / '.gitattributes', root / 'Start-Portal.ps1', root / 'output/Answer_Script.pdf', root / 'output/Answer_Script.md']
+files = [root / 'README.md', root / '.gitignore', root / '.gitattributes', root / 'Start-Portal.ps1', root / 'CoursePath.code-workspace', root / 'output/Answer_Script.pdf', root / 'output/Answer_Script.md']
 for optional in ['output/Answer_Script.docx', 'output/CoursePath_Source.bundle']:
     if (root / optional).exists():
         files.append(root / optional)
-for folder in ['portal', 'practicals', 'docs', '.github']:
+for folder in ['portal', 'practicals', 'docs', '.github', '.vscode']:
     for current, dirs, names in os.walk(root / folder):
         dirs[:] = [d for d in dirs if d not in {'vendor', 'node_modules', '.git', 'dist', '__pycache__'}]
         for name in names:

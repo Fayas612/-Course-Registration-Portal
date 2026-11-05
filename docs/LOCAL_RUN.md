@@ -4,6 +4,16 @@ The current working copy is connected to **MySQL Community Server 8.4.13** at 12
 
 ## On this computer
 
+### From VS Code
+
+Open `CoursePath.code-workspace` in the project folder. Press **Ctrl+Shift+B** to run the default **Start CoursePath** task. You can also choose Terminal > Run Task > Start CoursePath. Open http://127.0.0.1:8000 after the task reports startup.
+
+Use this Laravel task rather than the Live Server extension's Go Live button, because the backend needs PHP and MySQL. The task sets RemoteSigned for its PowerShell process only so locally created startup scripts can run; it does not change the system execution policy. On this computer the launcher selects the installed PHP 8.5 executable, including when VS Code has an older PATH.
+
+The extracted ZIP requires Composer dependencies and a local `.env`/database setup before it can run. The original configured working folder on this computer already has these. Opening the project files in VS Code does not start the backend by itself.
+
+### From PowerShell
+
 Run `./Start-Portal.ps1` from the project folder in PowerShell. It starts this project's already-configured portable MySQL server if needed and starts Laravel on port 8000. Both processes run in the background. This does not install a Windows service or start automatically after reboot.
 
 - Course catalogue: http://127.0.0.1:8000
