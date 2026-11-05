@@ -1,0 +1,15 @@
+:root{--ink:#18352e;--accent:#b7e176;--paper:#f7f8f4}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.brand-mark{display:inline-grid;place-items:center;background:var(--ink);color:var(--accent);width:34px;height:34px;border-radius:10px;margin-right:7px}
+.hero{background:var(--ink);color:white;border-radius:22px}.text-accent{color:var(--accent)}
+.eyebrow{font-size:.72rem;letter-spacing:.15em;font-weight:750}.hero .lead{max-width:570px;color:#d6e0d9}
+.hero .btn-dark{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.hero-note{background:#ffffff0d;border:1px solid #ffffff30;border-radius:16px;padding:28px}
+.card{border:1px solid #e2e7dc;border-radius:16px}.course-number{font-size:1.5rem;color:#6c7e6e;font-weight:700}
+.btn-dark{background:var(--ink);border-color:var(--ink)}.btn-dark:hover{background:#2c5549;border-color:#2c5549}
+.form-panel{background:white;border:1px solid #e2e7dc;border-radius:18px;padding:30px;max-width:680px}
+.form-control:focus{border-color:#65864a;box-shadow:0 0 0 .2rem #b7e17655}a{color:#245d47}
+th,td{padding:1rem!important}.lead{line-height:1.7}#catalog{scroll-margin-top:25px}
+@media(max-width:767px){main.container{padding-top:1.5rem!important}.hero{border-radius:14px}.form-panel{padding:22px}.display-5{font-size:2.3rem}}
+.article-panel{max-width:850px}.article-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8}.navbar-nav{font-size:.9rem}
+@media(min-width:768px) and (max-width:1199px){.navbar-nav{gap:.35rem!important}.navbar-brand{font-size:1.05rem}}

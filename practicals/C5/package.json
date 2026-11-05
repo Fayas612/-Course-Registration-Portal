@@ -1,0 +1,19 @@
+{
+  "name": "products-practical",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "api": "node server.js",
+    "dev": "vite --configLoader native",
+    "build": "vite build --configLoader native"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
