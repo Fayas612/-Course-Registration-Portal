@@ -1,8 +1,8 @@
 # Publishing and repository handoff
 
-The package has no live hosting URL or public Git repository. These steps must be completed using your own accounts; do not list localhost as a deployed URL.
+The source is published at https://github.com/Fayas612/-Course-Registration-Portal on the main branch. The Laravel application has no live hosting URL yet; do not list localhost as a deployed URL. GitHub Pages cannot run its PHP/MySQL backend.
 
-The current source is committed locally on branch `codex/coursepath-portal`. The updated archive includes `output/CoursePath_Source.bundle` as an offline copy of the Git history. You can clone it with `git clone output/CoursePath_Source.bundle coursepath`. This preserves local commits; it does not create a remote repository or public URL.
+The local development branch `codex/coursepath-portal` tracks `origin/main`. The updated archive includes `output/CoursePath_Source.bundle` as an offline copy of the Git history. You can clone it with `git clone output/CoursePath_Source.bundle coursepath`. A Git repository and a hosted application are separate deliverables.
 
 ## Git
 From a working copy, run `git init` if it is not already a repository. Ensure .env, vendor, node_modules, logs and database files are ignored. Stage the source, inspect `git diff --cached`, and commit with a meaningful message, for example `Build course portal with admin CRUD, registrations and API`. Create a repository in your account, add its remote URL with `git remote add origin YOUR_REPOSITORY_URL`, and push your branch. Add later commits for genuine changes as you develop. Do not invent earlier development history. Put the actual repository URL in the checklist.

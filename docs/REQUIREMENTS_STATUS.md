@@ -1,6 +1,6 @@
 # Requirement implementation status
 
-Updated 5 November 2026.
+Updated 7 November 2026.
 
 | Requirement | Status | Evidence |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ Updated 5 November 2026.
 | 4. Admin login and access restrictions | Implemented and tested | Laravel session authentication, admin authorisation middleware, CLI account creation, local account ready |
 | 5. Responsive Bootstrap frontend and JavaScript | Implemented | Navbar, responsive course cards, live search, mobile collapse and local Bootstrap assets |
 | 6. GET /api/courses | Implemented and tested | HTTP 200 JSON array of course records; no registrant data exposed |
-| 7. Git and public deployment | Source committed in a local Git repository; external publication pending | Branch codex/coursepath-portal; source and CI/deployment files supplied. A connected hosting account and repository destination are still required for a live URL and remote repository link |
+| 7. Git and public deployment | Source published to GitHub main; application hosting pending | https://github.com/Fayas612/-Course-Registration-Portal ; local development branch codex/coursepath-portal; CI/deployment files supplied. A hosting account is still required for a live application URL |
 | Extra news/posts management | Implemented and tested | Public news list/detail; admin create/view/edit/delete; drafts, publication status, author relationship and escaped plain-text content |
 
 ## Verification
@@ -23,4 +23,4 @@ Browser verification also confirmed local administrator sign-in, the dashboard c
 
 `portal/Dockerfile`, `portal/docker/entrypoint.sh` and `portal/railway.json` prepare the application for Laravel-compatible hosting. `.github/workflows/tests.yml` prepares MySQL CI. Docker and hosted CI were not executed locally because those runtimes/accounts are not connected; the PHP application and MySQL tests were verified directly on this computer.
 
-GitHub and Railway were located as available integrations but are not confirmed connected. There is no public deployment URL or remote repository URL to report yet. The Docker setup does not use Cloudflare Sites, because this project requires Laravel/PHP and MySQL.
+The source is published at https://github.com/Fayas612/-Course-Registration-Portal on the main branch. Railway is not confirmed connected, and there is no public application deployment URL yet. GitHub Pages cannot execute the Laravel backend.

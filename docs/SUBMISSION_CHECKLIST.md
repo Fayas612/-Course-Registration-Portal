@@ -11,13 +11,13 @@ Submission date: ____________________
 - [ ] Confirm the course CRUD, validation, protected routes and duplicate registration rule.
 - [ ] Confirm /api/courses returns JSON online.
 - [ ] Publish the application and put the real live URL below.
-- [ ] Push source code and meaningful commits to your Git repository; add its URL below.
+- [x] Push source code and meaningful commits to your Git repository; add its URL below.
 - [ ] Include the migrations (already supplied). The SQL schema is supplementary.
 - [ ] Review the ZIP contents; exclude credentials, local runtime databases and personal registration data.
 - [ ] Prepare and perform the five-minute demo and viva.
 - [ ] Confirm your instructor permits the use of this reference material for the intended submission.
 
 Live application URL: NOT YET DEPLOYED - replace after deployment.
-Git repository URL: NOT YET PUBLISHED - replace after pushing.
+Git repository URL: https://github.com/Fayas612/-Course-Registration-Portal
 
 The provided PDF contains no additional earlier assignment briefs. Only the practical tasks in this assessment are included. Add any separate assignments required by your course.
